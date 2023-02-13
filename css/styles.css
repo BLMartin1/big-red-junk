@@ -1,0 +1,123 @@
+body {
+  text-align: center;
+  font-family: "Chivo";
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+
+hr{
+  border: dotted #000000 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 60px auto 60px auto;
+}
+
+/* Containers */
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Heading */
+.big-heading{
+  font-weight: 900;
+  font-family: "Alfa Slab One";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding: 2% 15% 3%;
+}
+
+.word-now{
+  margin-bottom:15%;
+}
+
+.service-now{
+  padding: 0 30px 0 30px;
+  position: absolute;
+  text-align: left;
+  left: 43%;
+  top: 5%;
+}
+
+.service-now-heading{
+    padding-left: 8px;
+    font-weight: normal;
+}
+
+.word-servicing{
+  padding-right: 15px;
+}
+
+.service-items{
+  padding: 15% 15%;
+}
+
+/* Navbar */
+
+.nav-item{
+  padding: 0 18px 0 18px;
+}
+
+.service-item{
+  padding: 0 10px 0 10px;
+}
+
+.navbar-list{
+  margin-top: 115px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Title Section */
+#title .container-fluid{
+  padding: 1% 10% 7%;
+}
+
+.title-text-div{
+  padding-top: 150px;
+
+}
+
+.title-image{
+  width: 50%;
+  position: relative;
+  right: 15%;
+  top: 0%;
+}
+
+.now-servicing{
+  margin-left: 1.5rem;
+}
+
+.jrd{
+  font-family: "Alfa Slab One";
+}
+/* Features */
+
+.icon{
+  padding-bottom: 2rem;
+}
+
+/* Footer */
+
+#footer{
+  padding: 7% 15%;
+}
+
+.footer-icon{
+  padding: 2% 1%;
+}
+
+.copyright{
+  padding-top: 2rem;
+}
+
+.btn-nextdoor{
+  color: #82CD47;
+}
