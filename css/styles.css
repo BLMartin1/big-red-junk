@@ -21,42 +21,35 @@ hr{
 
 /* Heading */
 .big-heading{
-  font-weight: 900;
+  font-weight: 800;
   font-family: "Alfa Slab One";
   font-size: 3.5rem;
   line-height: 1.5;
   padding: 2% 15% 3%;
 }
 
-.word-now{
-  margin-bottom:15%;
-}
-
-.service-now{
-  padding: 0 30px 0 30px;
-  position: absolute;
-  text-align: left;
-  left: 43%;
-  top: 5%;
-}
-
-.service-now-heading{
-    padding-left: 8px;
-    font-weight: normal;
-}
-
-.word-servicing{
-  padding-right: 15px;
-}
-
-.service-items{
-  padding: 15% 15%;
-}
-
 /* Navbar */
+
+.brand-and-nav{
+  padding-bottom: 0.5rem;
+}
+
+.navbar{
+  position: relative;
+  left: 38%;
+}
+
+.title-image{
+  position: relative;
+  width: 30%;
+}
 
 .nav-item{
   padding: 0 18px 0 18px;
+}
+
+.services-box{
+  padding-bottom: 20px;
 }
 
 .service-item{
@@ -77,22 +70,6 @@ hr{
 /* Title Section */
 #title .container-fluid{
   padding: 1% 10% 7%;
-}
-
-.title-text-div{
-  padding-top: 150px;
-
-}
-
-.title-image{
-  width: 50%;
-  position: relative;
-  right: 15%;
-  top: 0%;
-}
-
-.now-servicing{
-  margin-left: 1.5rem;
 }
 
 .jrd{
