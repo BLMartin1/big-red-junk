@@ -4,6 +4,8 @@
   <title>Big Red Junk</title>
   <!-- BS JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- Email Validation -->
+  <script src="mail.js"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bb8ddf43d0.js" crossorigin="anonymous"></script>
   <!-- Favicon -->
@@ -21,35 +23,14 @@
 <body>
 
   <section id="title">
-    <div class="container-fluid">
-
-
+    <div class="d-flex container-fluid">
     <!-- Nav Bar -->
+      <img class="title-image" src="images/BRJ_brand.jpg" alt="bull_and_trailer_logo"/>
       <nav class="navbar navbar-expand-lg">
-
-        <a class="navbar-brand" href="index.html">
-          <img class="title-image" src="images/BRJ_brand.jpg" alt="bull_and_trailer_logo"/>
-        </a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDemo01" aria-controls="navbarDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="service-now navbar navbar-expand-md">
-          <div>
-            <h4 class="service-now-heading">Now</h4>
-          </div>
-          <div>
-            <h4 class="service-now-heading">Servicing:</h4>
-          </div>
-            <ul class="navbar-nav ms-auto">
-              <li class="service-item nav-item">Raleigh</li>
-              <li class="service-item nav-item">Wake Forest</li>
-              <li class="service-item nav-item">Louisburg</li>
-              <li class="service-item nav-item">Franklinton</li>
-              <li class="service-item nav-item">Youngsville</li>
-            </ul>
-        </div>
-
         <div class="collapse navbar-collapse navbar-list" id="navbarDemo01">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -64,13 +45,11 @@
           </ul>
         </div>
       </nav>
-
-
-
+    </div>
     <!-- Title -->
 
       <div class="title-text-div">
-        <div class="col-lg-12">
+        <div class="col-lg-12-md-6">
           <h1 class="big-heading">Trust and Reliablity when you need it most.</h1>
           <a class="btn btn-danger btn-lg download-button" href="#contact" role="button">Book Appointment</a>
         </div>
@@ -89,7 +68,7 @@
           <i class="icon fa-solid fa-trailer fa-4x"></i>
           <h3 class="services-title">Removals</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We take a variety of junk items. If it fits, we'll take it.
           </p>
           <div class="dropdown">
             <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -152,10 +131,8 @@
   <!-- Testimonials -->
 <section id="testimonials">
 
-  <div class="container-fluid">
-    <h1>Yelp Carousel</h1>
-  </div>
-
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-8b8cd681-5d68-4826-90d5-95bdce09a2c7"></div>
 
 </section>
 
@@ -170,45 +147,54 @@
         <p class="lead">Questions to ask? Book an appointment? Fill out the form to contact us directly.</p>
       </div>
 
+      <div clas="row-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <i class="fa-solid fa-location-dot fa-2x"></i>
+            <p>Louisburg Road, Wake Forest, NC</p>
+          </li>
+        </ul>
+      </div>
+
       <div class="row justify-content-center my-5">
 
         <div class="col-lg-6">
           <form>
             <div class="row">
-              <div class="col">
+              <div class="col-md-6">
                 <label for="first-name" class="form-label"></label>
                 <input type="text" class="form-control" id="first-name" placeholder="First Name" required/>
               </div>
-              <div class="col">
+              <div class="col-md-6">
                 <label for="last-name" class="form-label"></label>
                 <input type="text" class="form-control" id="last-name" placeholder="Last Name" required/>
               </div>
             </div>
               <div class="row">
-                <div class= "col">
+                <div class= "col-md-6">
                   <label for="email" class="form-label"></label>
                   <input type="email" class="form-control" id="email" placeholder="Email" required/>
                 </div>
-                <div class= "col">
+                <div class= "col-md-6">
                   <label for="phone" class="form-label"></label>
                   <input type="text" class="form-control" id="phone" placeholder="Phone"required/>
                 </div>
               </div>
             <div class="row">
               <div class="col">
-                <label for="name" class="form-label"></label>
+                <label for="city" class="form-label"></label>
                 <input type="text" class="form-control" id="city" placeholder="City"required/>
               </div>
               <div class="col">
-                <label for="name" class="form-label"></label>
-                <input type="text" class="form-control" id="zipcode" placeholder="Zip"required/>
+                <label for="zip" class="form-label"></label>
+                <input type="text" class="form-control" id="zip" placeholder="Zip"required/>
               </div>
             </div>
 
             <div class="row">
                 <div class="col">
                   <label for="service" class="form-label"></label>
-                  <select class="form-select" id="subject">
+                  <select class="form-select" id="service">
                     <option value="services" selected/>Service Needed...</option>
                     <option value="removal">Removal</option>
                     <option value="clean-out">Clean-Out</option>
@@ -220,12 +206,12 @@
 
 
             <div class="form-floating mt-3">
-              <textarea type="textarea" class="form-control" id="textarea" style="height: 140px" required></textarea>
+              <textarea type="textarea" class="form-control" id="description" style="height: 140px" required></textarea>
               <label for="description">Please provide a brief description.</label>
             </div>
 
             <div class="text-center mt-4">
-              <button type="submit" class="btn btn-danger">Submit</button>
+              <button type="submit" class="btn btn-danger" onclick="validateForm();">Submit</button>
             </div>
 
           </form>
