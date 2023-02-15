@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./c/Users/Coding/Projects/big-red-junk
+  DEPLOYMENT_FOLDER: C:\Users\marti\Coding\Projects\big-red-junk
 
 jobs:
 # Please do not rename this job
@@ -33,7 +33,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: 70745432-f949-4d89-845f-4de9bfcc935d
+          project-id: f675699a-526c-4d98-8813-89510a2f6c93
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
